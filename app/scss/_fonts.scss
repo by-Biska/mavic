@@ -1,0 +1,79 @@
+@font-face {
+    font-family: "SFProDisplay-Light", sans-serif;
+    src: url(../fonts/SFProDisplay-Light.woff2) format(woff2) url(../fonts/SFProDisplay-Light.woff) format(woff);
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SFProDisplay-Regular", sans-serif;
+    src: url(../fonts/SFProDisplay-Regular.woff2) format(woff2) url(../fonts/SFProDisplay-Regular.woff) format(woff);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SFProDisplay-Medium", sans-serif;
+    src: url(../fonts/SFProDisplay-Medium.woff2) format(woff2) url(../fonts/SFProDisplay-Medium.woff) format(woff);
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SFProDisplay-Semibold", sans-serif;
+    src: url(../fonts/SFProDisplay-Semibold.woff2) format(woff2) url(../fonts/SFProDisplay-Semibold.woff) format(woff);
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SFProDisplay-Bold", sans-serif;
+    src: url(../fonts/SFProDisplay-Bold.woff2) format(woff2) url(../fonts/SFProDisplay-Bold.woff) format(woff);
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ubuntu-300 - latin_cyrillic */
+@font-face {
+    font-family: "ubuntu-v15-latin_cyrillic-300",sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url("../fonts/ubuntu-v15-latin_cyrillic-300.eot"); /* IE9 Compat Modes */
+    src: local(""), url("../fonts/ubuntu-v15-latin_cyrillic-300.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */ url("../fonts/ubuntu-v15-latin_cyrillic-300.woff2") format("woff2"),
+        /* Super Modern Browsers */ url("../fonts/ubuntu-v15-latin_cyrillic-300.woff") format("woff"),
+        /* Modern Browsers */ url("../fonts/ubuntu-v15-latin_cyrillic-300.ttf") format("truetype"),
+        /* Safari, Android, iOS */ url("../fonts/ubuntu-v15-latin_cyrillic-300.svg#Ubuntu") format("svg"); /* Legacy iOS */
+}
+/* ubuntu-500 - latin_cyrillic */
+@font-face {
+    font-family: "ubuntu-v15-latin_cyrillic-500",sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("../fonts/ubuntu-v15-latin_cyrillic-500.eot"); /* IE9 Compat Modes */
+    src: local(""), url("../fonts/ubuntu-v15-latin_cyrillic-500.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */ url("../fonts/ubuntu-v15-latin_cyrillic-500.woff2") format("woff2"),
+        /* Super Modern Browsers */ url("../fonts/ubuntu-v15-latin_cyrillic-500.woff") format("woff"),
+        /* Modern Browsers */ url("../fonts/ubuntu-v15-latin_cyrillic-500.ttf") format("truetype"),
+        /* Safari, Android, iOS */ url("../fonts/ubuntu-v15-latin_cyrillic-500.svg#Ubuntu") format("svg"); /* Legacy iOS */
+}
+/* ubuntu-700 - latin_cyrillic */
+@font-face {
+    font-family: "ubuntu-v15-latin_cyrillic-700",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("../fonts/ubuntu-v15-latin_cyrillic-700.eot"); /* IE9 Compat Modes */
+    src: local(""), url("../fonts/ubuntu-v15-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */ url("../fonts/ubuntu-v15-latin_cyrillic-700.woff2") format("woff2"),
+        /* Super Modern Browsers */ url("../fonts/ubuntu-v15-latin_cyrillic-700.woff") format("woff"),
+        /* Modern Browsers */ url("../fonts/ubuntu-v15-latin_cyrillic-700.ttf") format("truetype"),
+        /* Safari, Android, iOS */ url("../fonts/ubuntu-v15-latin_cyrillic-700.svg#Ubuntu") format("svg"); /* Legacy iOS */
+}

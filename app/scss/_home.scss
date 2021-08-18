@@ -1,0 +1,176 @@
+.top {
+    background-image: url(../images/top-bg.jpg);
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: radial-gradient(
+            45.97% 54.43% at 50% 45.57%,
+            rgba(23, 26, 28, 0) 50.28%,
+            rgba(23, 26, 28, 0.00225974) 50.29%,
+            rgba(4, 5, 5, 0.820343) 58.72%,
+            rgba(5, 5, 6, 0.792703) 80.08%,
+            #000000 87.89%
+        );
+        opacity: 0.4;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: flex-end;
+    }
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    &__title {
+        @extend %sf-semibold;
+        font-size: 96px;
+        line-height: 115px;
+        margin-bottom: 36px;
+    }
+    &__text {
+        margin: 90px 0 35px;
+        line-height: 150%;
+        @extend %ubuntu-light;
+        max-width: 325px;
+    }
+    &__social-item {
+        display: inline-block;
+        margin: 0 25px;
+    }
+    &__social-link {
+        opacity: 0.5;
+        transition: all 0.3s;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.products {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 50px;
+    }
+    &__text {
+        max-width: 446px;
+
+        p {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__slider-box {
+        position: relative;
+        padding-top: 110px;
+        margin-top: 6%;
+    }
+    &__slider-text {
+        width: 280px;
+        position: absolute;
+        @extend %ubuntu-medium;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: right;
+        bottom: 40px;
+        left: -235px;
+        z-index: 5;
+    }
+    &__slider {
+        max-width: 560px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 276px;
+            border: 4px solid #fff;
+            top: -15px;
+            right: -17px;
+        }
+    }
+}
+
+.slider-btn {
+    padding: 16px 26px;
+    border: none;
+    background-color: #fff;
+    position: absolute;
+    bottom: -49px;
+    right: 0;
+    cursor: pointer;
+    z-index: 5;
+
+    svg {
+        stroke: #000;
+    }
+
+    &__left {
+        right: 60px;
+    }
+
+    &.slick-disabled {
+        background-color: #000;
+        svg {
+            stroke: #fff;
+        }
+    }
+}
+
+.benefits {
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__item {
+        margin-bottom: 100px;
+        display: flex;
+        align-items: flex-end;
+        &:nth-child(even) .benefits__info-text {
+            margin-top: 50px;
+
+        }
+    }
+    &__num {
+        @extend %ubuntu-bold;
+        font-size: 36px;
+        line-height: 41px;
+    }
+    &__img {
+        position: relative;
+        margin-right: 32px;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 193px;
+            height: 128px;
+            border: 2px solid #ffffff;
+            right: -12px;
+            top: -12px;
+            z-index: -1;
+        }
+    }
+
+    &__info {
+        width: 300px;
+    }
+    &__info-title {
+        width: 123px;
+        @extend %ubuntu-bold;
+        font-size: 21px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+    &__info-text {
+        font-size: 15px;
+        line-height: 130%;
+    }
+}
