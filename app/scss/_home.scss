@@ -128,15 +128,58 @@
     &__items {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        padding-left: 25px;
     }
     &__item {
-        margin-bottom: 100px;
+        margin-bottom: 120px;
         display: flex;
         align-items: flex-end;
-        &:nth-child(even) .benefits__info-text {
-            margin-top: 50px;
 
+        &:nth-child(even) {
+            margin-left: 78px;
+            transform: translateY(25px);
+        }
+        &:nth-child(3) {
+            margin-left: 30px;
+        }
+        &:nth-child(4) {
+            margin-left: 90px;
+        }
+        &:first-child,
+        &:nth-child(3) {
+            position: relative;
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                background-repeat: no-repeat;
+                background-position: 0 0;
+            }
+        }
+        &:first-child {
+            &::before {
+                height: 48px;
+                width: 245px;
+                background-image: url("../images/line-1.svg");
+                right: -81px;
+                top: 41px;
+            }
+        }
+        &:nth-child(3) {
+            &::before {
+                width: 254px;
+                height: 43px;
+                top: 50px;
+                right: -90px;
+                background-image: url("../images/line-3.svg");
+            }
+            &::after {
+                width: 463px;
+                height: 62px;
+                top: -90px;
+                right: -50px;
+                background-image: url("../images/line-2.svg");
+            }
         }
     }
     &__num {
