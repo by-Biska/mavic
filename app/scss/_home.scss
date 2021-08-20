@@ -217,3 +217,71 @@
         line-height: 130%;
     }
 }
+
+.specification {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 25px;
+    }
+    &__item--center {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    &__box-2 {
+        margin-top: 140px;
+    }
+    &__box-4 {
+        margin-top: 160px;
+    }
+    &__box-1::before {
+        background-image: url("../images/pointer-1.svg");
+        width: 229px;
+        height: 115px;
+        right: -210px;
+        bottom: 4px;
+    }
+    &__box-2::before {
+        background-image: url("../images/pointer-2.svg");
+        width: 346px;
+        height: 82px;
+        right: -320px;
+        top: -66px;
+    }
+    &__box-3::before {
+        background-image: url("../images/pointer-3.svg");
+        width: 258px;
+        height: 104px;
+        left: -282px;
+        bottom: -22px;
+    }
+    &__box-4::before {
+        background-image: url("../images/pointer-4.svg");
+        width: 124px;
+        height: 90px;
+        left: -140px;
+        top: -73px;
+    }
+    &__box {
+        width: 280px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            z-index: 10;
+        }
+    }
+    &__box-title {
+        font-size: 21px;
+        line-height: 28px;
+        @extend %ubuntu-bold;
+        margin-bottom: 10px;
+    }
+    &__box-text {
+        font-size: 15px;
+        line-height: 130%;
+    }
+}
