@@ -297,13 +297,13 @@
         position: relative;
         margin-bottom: 4px;
         &:nth-child(3)::after {
-            content: '';
+            content: "";
             position: absolute;
             width: 319px;
             height: 125px;
             top: -33px;
             right: -386px;
-            background-image: url('../images/questions-mavic.png');
+            background-image: url("../images/questions-mavic.png");
         }
     }
     &__item-title {
@@ -333,13 +333,13 @@
         line-height: 150%;
         @extend %ubuntu-light;
         height: 0;
-        transition: all .5s;
+        transition: all 0.5s;
         opacity: 0;
         visibility: hidden;
     }
     &__item.questions__item--active {
         .questions__item-title::after {
-            transform: rotate(180deg );
+            transform: rotate(180deg);
         }
         .questions__item-text {
             height: 100%;
@@ -347,5 +347,122 @@
             padding: 0 5px 75px 50px;
             visibility: visible;
         }
+    }
+}
+
+.contacts {
+    &__inner {
+        display: flex;
+    }
+    &__info {
+        width: 240px;
+        margin-right: 60px;
+    }
+    &__info-box {
+        margin-bottom: 30px;
+    }
+    &__info-title {
+        @extend %ubuntu-bold;
+        font-size: 21px;
+        line-height: 24px;
+        margin-bottom: 13px;
+    }
+    &__info-phone {
+        font-size: 15px;
+        margin-bottom: 5px;
+        line-height: 130%;
+    }
+    &__info-emeil {
+        font-size: 15px;
+        line-height: 130%;
+    }
+
+    &__form {
+        width: 570px;
+        margin-right: 106px;
+    }
+    &__form-title {
+        @extend %ubuntu-bold;
+        font-size: 21px;
+        line-height: 24px;
+        margin-bottom: 13px;
+    }
+    &__form-text {
+        font-size: 15px;
+        line-height: 130%;
+        margin-bottom: 12px;
+    }
+    &__form-line {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    &__form-input,
+    &__form-area {
+        background: rgba(0, 0, 0, 0.5);
+        font-size: 13px;
+        line-height: 130%;
+        border: none;
+        @extend %ubuntu-regular;
+        padding: 15px;
+        color: #fff;
+        &::placeholder {
+            color: rgba(#fff, 0.4);
+        }
+    }
+    &__form-input {
+        width: 49%;
+    }
+    &__form-area {
+        resize: none;
+        width: 100%;
+        height: 144px;
+        margin-bottom: 20px;
+    }
+    &__form-btn {
+        border: 1px solid #ffffff;
+        padding: 9px 15px;
+        border-radius: 2px;
+        background-color: transparent;
+        color: #fff;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        @extend %ubuntu-bold;
+        cursor: pointer;
+        transition: all .3s;
+        &:hover {
+            background-color: #fff;
+            color: #000;
+        }
+    }
+    &__social-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__social-item {
+        margin-bottom: 14px;
+    }
+    &__social-link {
+        opacity: .5;
+        transition: all .3s;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.footer {
+    position: absolute;
+    bottom: 32px;
+    left: 0;
+    right: 0;
+    &__copy {
+        @extend %ubuntu-light;
+        text-align: right;
+        font-size: 13px;
+        line-height: 130%;
+        color: rgba(#fff, .64);
     }
 }

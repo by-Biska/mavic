@@ -40,7 +40,7 @@
 
 /* ubuntu-300 - latin_cyrillic */
 @font-face {
-    font-family: "ubuntu-v15-latin_cyrillic-300",sans-serif;
+    font-family: "ubuntu-v15-latin_cyrillic-300", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-display: swap;
@@ -51,9 +51,22 @@
         /* Modern Browsers */ url("../fonts/ubuntu-v15-latin_cyrillic-300.ttf") format("truetype"),
         /* Safari, Android, iOS */ url("../fonts/ubuntu-v15-latin_cyrillic-300.svg#Ubuntu") format("svg"); /* Legacy iOS */
 }
+/* ubuntu-regular - latin */
+/* ubuntu-regular - latin_cyrillic */
+@font-face {
+    font-family: "ubuntu-v15-latin_cyrillic-400";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ubuntu-v15-latin_cyrillic-regular.eot"); /* IE9 Compat Modes */
+    src: local(""), url("../fonts/ubuntu-v15-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */ url("../fonts/ubuntu-v15-latin_cyrillic-regular.woff2") format("woff2"),
+        /* Super Modern Browsers */ url("../fonts/ubuntu-v15-latin_cyrillic-regular.woff") format("woff"),
+        /* Modern Browsers */ url("../fonts/ubuntu-v15-latin_cyrillic-regular.ttf") format("truetype"),
+        /* Safari, Android, iOS */ url("../fonts/ubuntu-v15-latin_cyrillic-regular.svg#Ubuntu") format("svg"); /* Legacy iOS */
+}
 /* ubuntu-500 - latin_cyrillic */
 @font-face {
-    font-family: "ubuntu-v15-latin_cyrillic-500",sans-serif;
+    font-family: "ubuntu-v15-latin_cyrillic-500", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-display: swap;
@@ -66,7 +79,7 @@
 }
 /* ubuntu-700 - latin_cyrillic */
 @font-face {
-    font-family: "ubuntu-v15-latin_cyrillic-700",sans-serif;
+    font-family: "ubuntu-v15-latin_cyrillic-700", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-display: swap;
