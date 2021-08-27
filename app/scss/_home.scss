@@ -33,9 +33,10 @@
         font-size: 96px;
         line-height: 115px;
         margin-bottom: 36px;
+        margin-top: -98%;
     }
     &__text {
-        margin: 90px 0 35px;
+        margin: 100px 0 35px;
         line-height: 150%;
         @extend %ubuntu-light;
         max-width: 325px;
