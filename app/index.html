@@ -12,8 +12,9 @@
     <div class="wrapper">
       <header class="header">
         <div class="container">
-          <div class="header__inner">
-            <a class="logo" href="#">
+          <div id="header__nav" class="header__inner">
+            <div data-menuanchor="top">
+              <a class="logo" href="#top">
               <picture class="logo__img">
                 <source
                   srcset="images/logo-mobile.png"
@@ -22,30 +23,31 @@
                 <img src="images/logo.png" alt="" />
               </picture>
             </a>
+            </div>
             <nav class="menu">
               <button class="menu__btn">
                 <span class="menu__btn-line"></span>
               </button>
               <ul class="menu__list">
-                <li class="menu__list-item">
+                <li class="menu__list-item" data-menuanchor="products">
                   <a class="menu__list-link" href="#products">О ДРОНЕ</a>
                 </li>
-                <li class="menu__list-item">
+                <li class="menu__list-item" data-menuanchor="benefits">
                   <a class="menu__list-link" href="#benefits">ПРЕИМУЩЕСТВА</a>
                 </li>
-                <li class="menu__list-item">
+                <li class="menu__list-item" data-menuanchor="specification">
                   <a class="menu__list-link" href="#specification"
                     >ХАРАКТЕРИСТИКИ</a
                   >
                 </li>
-                <li class="menu__list-item">
+                <li class="menu__list-item" data-menuanchor="questions">
                   <a class="menu__list-link" href="#questions">ВОПРОСЫ</a>
                 </li>
-                <li class="menu__list-item">
+                <li class="menu__list-item" data-menuanchor="contacts">
                   <a class="menu__list-link" href="#contacts">КОНТАКТЫ</a>
                 </li>
                 <li class="menu__list-phone">
-                  <a class="header__phone" href="tel:80505676767"
+                  <a class="header__phone-menu" href="tel:80505676767"
                 >8 (050) 567 67 67</a
               >
                 </li>
@@ -55,14 +57,13 @@
             <div class="header__info">
               <button class="header__btn">купить</button>
               <a class="header__phone" href="tel:80505676767"
-                >8 (050) 567 67 67</a
-              >
+                >8 (050) 567 67 67</a>
             </div>
           </div>
         </div>
       </header>
       <main class="main" id="fullpage">
-        <section class="page-section top">
+        <section data-anchor="top" class="page-section top">
           <div class="page-section__wrapper top__wrapper">
             <div class="container">
               <div class="top__inner">
@@ -91,7 +92,7 @@
                 </ul>
               </div>
             </div>
-            <div class="scroll_btn">
+            <div class="scroll__btn">
               <a href="#products">
                 <img src="images/arrow-down.svg" alt="" />
               </a>
@@ -99,7 +100,7 @@
           </div>
         </section>
 
-        <section id="products" class="page-section products">
+        <section data-anchor="products" class="page-section products">
           <div class="page-section__wrapper">
             <div class="container">
               <h3 class="title products__title">Что такое Mavic 2 Pro?</h3>
@@ -169,7 +170,7 @@
                 </div>
               </div>
             </div>
-            <div class="scroll_btn">
+            <div class="scroll__btn">
               <a href="#benefits">
                 <img src="images/arrow-down.svg" alt="" />
               </a>
@@ -177,7 +178,7 @@
           </div>
         </section>
 
-        <section id="benefits" class="page-section benefits">
+        <section data-anchor="benefits" class="page-section benefits">
           <div class="page-section__wrapper">
             <div class="container">
               <h3 class="title">Преимущества</h3>
@@ -240,7 +241,7 @@
                 </div>
               </div>
             </div>
-            <div class="scroll_btn">
+            <div class="scroll__btn">
               <a href="#specification">
                 <img src="images/arrow-down.svg" alt="" />
               </a>
@@ -248,7 +249,7 @@
           </div>
         </section>
 
-        <section id="specification" class="page-section specification">
+        <section data-anchor="specification" class="page-section specification">
           <div class="page-section__wrapper">
             <div class="container">
               <h3 class="title">Характеристики</h3>
@@ -292,7 +293,7 @@
                 </div>
               </div>
             </div>
-            <div class="scroll_btn">
+            <div class="scroll__btn">
               <a href="#questions">
                 <img src="images/arrow-down.svg" alt="" />
               </a>
@@ -300,7 +301,7 @@
           </div>
         </section>
 
-        <section id="questions" class="page-section questions">
+        <section data-anchor="questions" class="page-section questions">
           <div class="page-section__wrapper">
             <div class="container">
               <h3 class="title">Остались вопросы?</h3>
@@ -355,7 +356,7 @@
                 </div>
               </div>
             </div>
-            <div class="scroll_btn">
+            <div class="scroll__btn">
               <a href="#contacts">
                 <img src="images/arrow-down.svg" alt="" />
               </a>
@@ -363,7 +364,7 @@
           </div>
         </section>
 
-        <section id="contacts" class="page-section contacts">
+        <section data-anchor="contacts" class="page-section contacts">
           <div class="page-section__wrapper">
             <div class="container">
               <h3 class="title">Контакты</h3>
