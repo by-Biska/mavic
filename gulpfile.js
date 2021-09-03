@@ -7,7 +7,7 @@ const uglify = require("gulp-uglify-es").default;
 const autoprefixer = require("gulp-autoprefixer");
 const imagemin = require("gulp-imagemin");
 const del = require("del");
-const webp = require("gulp-webp"); 
+const webp = require("gulp-webp");
 const webphtml = require("gulp-webp-html");
 const webpcss = require("gulp-webpcss");
 
@@ -53,7 +53,8 @@ function scripts() {
     "node_modules/slick-carousel/slick/slick.js",
     "node_modules/fullpage.js/dist/fullpage.js",
     "node_modules/fullpage.js/vendors/scrolloverflow.js",
-    "app/js/main.js"])
+    "app/js/main.js",
+  ])
     .pipe(concat("main.min.js"))
     .pipe(uglify())
     .pipe(dest("app/js"))
@@ -61,13 +62,20 @@ function scripts() {
 }
 
 function html() {
-  return src(["app/index.html"])
-  .pipe(webphtml())
-  .pipe(dest("dist/"))
+  return src(["app/index.html"]).pipe(webphtml()).pipe(dest("dist/"));
 }
 
 function styles() {
   return src("app/scss/style.scss")
+    .pipe(
+      autoprefixer({
+        overrideBrowserslist: ["last 5 versions"],
+        cascade: true,
+        grid: true,
+      })
+    )
+    .pipe(scss({ outputStyle: "expanded" }).on("error", scss.logError))
+    .pipe(dest("app/css"))
     .pipe(
       scss({
         outputStyle: "compressed",
@@ -94,7 +102,7 @@ function build() {
 function watching() {
   watch(["app/scss/**/*.scss"], styles);
   watch(["app/js/**/*.js", "!app/js/main.min.js"], scripts);
-  watch(["app/*.html"]).on('change', browserSync.reload);
+  watch(["app/*.html"]).on("change", browserSync.reload);
 }
 
 exports.styles = styles;

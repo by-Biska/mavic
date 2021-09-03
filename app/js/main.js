@@ -7,9 +7,11 @@ $(function () {
     infinite: false,
   });
 
-  $(".questions__item-title").on("click", function () {
-    $(".questions__item").removeClass("questions__item--active");
-    $(this).parent().addClass("questions__item--active");
+  $(".questions__item-title").on("click", function() {
+    
+    $('.questions__item-title').not($(this)).removeClass("active")
+    $('.questions__item-text').not($(this).next()).slideUp(300)
+    $(this).toggleClass("active").next().slideDown(300);
   });
 
   $("#fullpage").fullpage({
@@ -19,17 +21,23 @@ $(function () {
     sectionSelector: ".page-section",
     scrollOverflow: true,
     menu: "#header__nav",
-    anchors: ["top", "products", "benefits", "specification", "questions", "contacts"],
+    anchors: [
+      "top",
+      "products",
+      "benefits",
+      "specification",
+      "questions",
+      "contacts",
+    ],
   });
 
-  $('.menu__btn').on('click', function() {
-    $('.menu__btn').toggleClass('menu__btn--active')
-    $('.menu__list').toggleClass('menu__list--active')
-  })
-  
-  $('.menu__list-link').on('click', function() {
-    $('.menu__btn').removeClass('menu__btn--active')
-    $('.menu__list').removeClass('menu__list--active')
-  })
+  $(".menu__btn").on("click", function () {
+    $(".menu__btn").toggleClass("menu__btn--active");
+    $(".menu__list").toggleClass("menu__list--active");
+  });
 
+  $(".menu__list-link").on("click", function () {
+    $(".menu__btn").removeClass("menu__btn--active");
+    $(".menu__list").removeClass("menu__list--active");
+  });
 });

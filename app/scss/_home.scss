@@ -329,24 +329,15 @@
         }
     }
     &__item-text {
-        padding: 0 5px 0px 50px;
+        padding: 0 5px 75px 50px;
         font-size: 15px;
         line-height: 150%;
         @extend %ubuntu-light;
-        height: 0;
-        transition: all 0.5s;
-        opacity: 0;
-        visibility: hidden;
+        display: none;
     }
-    &__item.questions__item--active {
+    &__item-title.active {
         .questions__item-title::after {
             transform: rotate(180deg);
-        }
-        .questions__item-text {
-            height: 100%;
-            opacity: 1;
-            padding: 0 5px 75px 50px;
-            visibility: visible;
         }
     }
 }

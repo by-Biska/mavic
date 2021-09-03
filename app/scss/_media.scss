@@ -83,7 +83,7 @@
             line-height: 21px;
             padding: 16px 10px 16px 30px;
         }
-        &__item.questions__item--active .questions__item-text {
+        &__item-text {
             padding: 0 5px 40px 30px;
         }
         &__item-title::after {
@@ -373,7 +373,7 @@
     .questions__items {
         padding-right: 60px;
     }
-    .questions__item.questions__item--active .questions__item-text {
+    .questions__item-text {
         padding: 0 15px 40px 30px;
     }
     .questions__item:nth-child(3)::after {
