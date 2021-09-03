@@ -19,8 +19,6 @@
     "gulp-sass": "^5.0.0",
     "gulp-uglify-es": "^3.0.0",
     "gulp-webp": "^4.0.1",
-    "gulp-webp-html": "^1.0.2",
-    "gulp-webpcss": "^1.1.1",
     "jquery": "^3.6.0",
     "sass": "^1.37.0",
     "slick-carousel": "^1.8.1",

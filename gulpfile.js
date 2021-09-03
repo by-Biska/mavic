@@ -8,8 +8,6 @@ const autoprefixer = require("gulp-autoprefixer");
 const imagemin = require("gulp-imagemin");
 const del = require("del");
 const webp = require("gulp-webp");
-const webphtml = require("gulp-webp-html");
-const webpcss = require("gulp-webpcss");
 
 function browsersync() {
   browserSync.init({
@@ -62,7 +60,8 @@ function scripts() {
 }
 
 function html() {
-  return src(["app/index.html"]).pipe(webphtml()).pipe(dest("dist/"));
+  return src(["app/index.html"])
+  .pipe(dest("dist/"));
 }
 
 function styles() {
