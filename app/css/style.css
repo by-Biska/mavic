@@ -286,7 +286,7 @@ body {
 }
 
 .page-section {
-  background-image: url(../images/page-bg.jpg);
+  background-image: url(../images/page-bg.webp);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -379,7 +379,7 @@ body {
 }
 
 .top {
-  background-image: url(../images/top-bg.jpg);
+  background-image: url(../images/top-bg.webp);
 }
 .top::before {
   content: "";
@@ -577,6 +577,7 @@ body {
 .specification__item--center {
   margin-left: -15px;
   margin-right: -15px;
+  margin-bottom: 2%;
 }
 .specification__box-2 {
   margin-top: 140px;
@@ -650,7 +651,7 @@ body {
   height: 125px;
   top: -33px;
   right: -386px;
-  background-image: url("../images/questions-mavic.png");
+  background-image: url("../images/questions-mavic.webp");
 }
 .questions__item-title {
   font-size: 21px;
@@ -867,6 +868,7 @@ body {
   .specification__item--center {
     text-align: center;
     margin-top: 71px;
+    margin-bottom: 8%;
   }
   .specification__item--center img {
     width: 80%;
@@ -943,7 +945,6 @@ body {
 
   .specification__item--center {
     text-align: center;
-    margin-top: 0;
   }
 }
 @media (max-width: 1100px) {

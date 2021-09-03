@@ -1,5 +1,5 @@
 .top {
-    background-image: url(../images/top-bg.jpg);
+    background-image: url(../images/top-bg.webp);
     &::before {
         content: "";
         position: absolute;
@@ -229,6 +229,7 @@
     &__item--center {
         margin-left: -15px;
         margin-right: -15px;
+        margin-bottom: 2%;
     }
     &__box-2 {
         margin-top: 140px;
@@ -304,7 +305,7 @@
             height: 125px;
             top: -33px;
             right: -386px;
-            background-image: url("../images/questions-mavic.png");
+            background-image: url("../images/questions-mavic.webp");
         }
     }
     &__item-title {
